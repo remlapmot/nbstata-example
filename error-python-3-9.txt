@@ -1,0 +1,14 @@
+% quarto render index.qmd --execute-daemon-restart
+
+
+Starting nbstata kernel...Done
+
+Executing 'index.quarto_ipynb'
+  Cell 1/1: ''...
+---
+
+(note I'd say you're missing 3 modules: pyyaml nbformat nbclient, but even with those)
+
+My suspicion is that Python 3.9 is just too old. When I try this in a uv environment it hangs at the code chunk. 
+
+But under Python 3.10, 3.11, 3.12, and 3.13 it works as expected.
