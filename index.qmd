@@ -1,0 +1,19 @@
+---
+title: "Stata Echo Test"
+format:
+  html:
+    embed-resources: true
+jupyter: nbstata
+---
+
+## Stata Analysis
+
+This cell's code should be hidden.
+
+```{stata}
+*| echo: false
+
+// The line above should hide this code block.
+sysuse auto, clear
+summarize mpg
+```
