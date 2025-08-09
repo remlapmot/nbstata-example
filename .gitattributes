@@ -8,3 +8,6 @@
 *.lock text eol=lf
 # toml files must use LF
 *.toml text eol=lf
+
+*.html linguist-vendored
+*.qmd linguist-detectable
